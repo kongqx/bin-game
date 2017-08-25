@@ -29,7 +29,7 @@ main()
 |           0x56391ea876a4      4883ec10       sub rsp, 0x10
 |           0x56391ea876a8      897dfc         mov dword [local_4h], edi  ; PARAMETER: int x
 |           0x56391ea876ab      837dfc14       cmp dword [local_4h], 0x14 ; [0x14:4]=-1 ; 20
-|       ,=< 0x56391ea876af      750c           jne 0x56391ea876bd      ; JMP if zf = 0
+|       ,=< 0x56391ea876af      750c           jne 0x56391ea876bd      ; JMP if ~ZF
 |       |   0x56391ea876b1      488d3dac0000.  lea rdi, str.success    ; 0x56391ea87764 ; "success"
 |       |   0x56391ea876b8      e8a3feffff     call sym.imp.puts       ; int puts(const char *s)
 |       `-> 0x56391ea876bd      b801000000     mov eax, 1
